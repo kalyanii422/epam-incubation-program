@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RestAPISuite">
+	<listeners>
+		<listener class-name="com.api.utilities.Listeners" />
+	</listeners>
+	<test thread-count="5" name="RestAPITest">
+		<classes>
+			<class name="com.api.testcases.TC001_GET_Status_Code" />
+			<class name="com.api.testcases.TC002_GET_Content_Type" />
+			<class name="com.api.testcases.TC003_GET_Response" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
